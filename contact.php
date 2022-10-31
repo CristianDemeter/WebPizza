@@ -14,7 +14,7 @@ $hashpassword = $_POST['hashpassword'];
 
 
 // database insert SQL code
-$sql = "INSERT INTO `corso_micro` (`name`, `id`, `email`, `hashPassword`) VALUES ('0', '$name', '$id', '$email', '$hashpassword')";
+$sql = "INSERT INTO `user` (`name`, `id`, `email`, `hashPassword`) VALUES ('$name', '$id', '$email', '$hashpassword')";
 
 // insert in database 
 $rs = mysqli_query($con, $sql);
