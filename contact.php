@@ -1,18 +1,20 @@
 
 <?php
+
 // database connection code
 // $con = mysqli_connect('localhost', 'database_user', 'database_password','database');
 
-$con = mysqli_connect('localhost', 'root', '','db_contact');
+$con = mysqli_connect('localhost', 'root', '','corso_micro');
 
 // get the post records
-$txtName = $_POST['txtName'];
-$txtEmail = $_POST['txtEmail'];
-$txtPhone = $_POST['txtPhone'];
-$txtMessage = $_POST['txtMessage'];
+$name = $_POST['name'];
+$id = $_POST['id'];
+$email = $_POST['email'];
+$hashpassword = $_POST['hashpassword'];
+
 
 // database insert SQL code
-$sql = "INSERT INTO `tbl_contact` (`Id`, `fldName`, `fldEmail`, `fldPhone`, `fldMessage`) VALUES ('0', '$txtName', '$txtEmail', '$txtPhone', '$txtMessage')";
+$sql = "INSERT INTO `corso_micro` (`name`, `id`, `email`, `hashPassword`) VALUES ('0', '$name', '$id', '$email', '$hashpassword')";
 
 // insert in database 
 $rs = mysqli_query($con, $sql);
