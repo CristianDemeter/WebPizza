@@ -26,7 +26,7 @@ echo $_GET['name'] . $_GET['email'];
 </head>
 <body>
         <?php
-        echo $name . $id 
+        echo $name[0] . $id[3]
         ?>
 </body>
 </html>
