@@ -7,5 +7,8 @@
 
   <body>
     <h1>Hello World</h1>
+
+    <a href="test_get.php?subject=PHP&web=W3schools.com">Prova wget</a>
+
   </body>
 </html>
