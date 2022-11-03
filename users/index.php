@@ -6,6 +6,7 @@ $id = $_GET['id'];
 $email = $_GET['email'];
 $hashpassword = $_GET['hashpassword'];
 
+$name = array("Michele", "Antonio", "Cristian", "Ciro");
 $id = array("a01", "b02", "c03", "d04");
 
 //a01 b02 c03 d04
